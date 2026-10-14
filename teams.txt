@@ -1,0 +1,56 @@
+--- Team card: CAR 2 ---
+Car 2:     192.168.0.95:5000   token 686398
+Camera 11: 192.168.0.118:50051  token 983149
+Camera 12: 192.168.0.107:50051  token 378031
+Goal:      http://192.168.0.19:8000/goal
+Dashboard: http://192.168.0.19:8000
+Corners:   markers 0, 12, 13, 14
+
+--- Team card: CAR 3 ---
+Car 3:     192.168.0.149:5000   token 838748
+Camera 11: 192.168.0.118:50051  token 983149
+Camera 12: 192.168.0.107:50051  token 378031
+Goal:      http://192.168.0.19:8000/goal
+Dashboard: http://192.168.0.19:8000
+Corners:   markers 0, 12, 13, 14
+
+--- Team card: CAR 4 ---
+Car 4:     192.168.0.173:5000   token 119172
+Camera 11: 192.168.0.118:50051  token 983149
+Camera 12: 192.168.0.107:50051  token 378031
+Goal:      http://192.168.0.19:8000/goal
+Dashboard: http://192.168.0.19:8000
+Corners:   markers 0, 12, 13, 14
+
+--- Team card: CAR 5 ---
+Car 5:     192.168.0.197:5000   token 987993
+Camera 11: 192.168.0.118:50051  token 983149
+Camera 12: 192.168.0.107:50051  token 378031
+Goal:      http://192.168.0.19:8000/goal
+Dashboard: http://192.168.0.19:8000
+Corners:   markers 0, 12, 13, 14
+
+--- Team card: CAR 7 ---
+Car 7:     192.168.0.116:5000   token 347890
+Camera 11: 192.168.0.118:50051  token 983149
+Camera 12: 192.168.0.107:50051  token 378031
+Goal:      http://192.168.0.19:8000/goal
+Dashboard: http://192.168.0.19:8000
+Corners:   markers 0, 12, 13, 14
+
+--- Team card: CAR 8 ---
+Car 8:     192.168.0.105:5000   token 746007
+Camera 11: 192.168.0.118:50051  token 983149
+Camera 12: 192.168.0.107:50051  token 378031
+Goal:      http://192.168.0.19:8000/goal
+Dashboard: http://192.168.0.19:8000
+Corners:   markers 0, 12, 13, 14
+
+--- Team card: CAR 9 ---
+Car 9:     192.168.0.93:5000   token 374744
+Camera 11: 192.168.0.118:50051  token 983149
+Camera 12: 192.168.0.107:50051  token 378031
+Goal:      http://192.168.0.19:8000/goal
+Dashboard: http://192.168.0.19:8000
+Corners:   markers 0, 12, 13, 14
+
