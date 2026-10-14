@@ -49,6 +49,7 @@
               uv
             ];
 
+            RUST_LOG="overloard=trace,car-control=trace";
             LD_LIBRARY_PATH = libPath;
             LIBCLANG_PATH = pkgs.lib.makeLibraryPath [ pkgs.llvmPackages_latest.libclang.lib ];
             BINDGEN_EXTRA_CLANG_ARGS =
