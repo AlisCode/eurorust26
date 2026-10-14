@@ -3,9 +3,17 @@ use serde::Serialize;
 use thiserror::Error;
 
 #[derive(Debug, Serialize)]
-pub struct CarInstruction {
+struct CarInstructionHttp {
     pub speed: f32,
     pub flip: bool,
+}
+
+pub enum CarInstruction {
+    Forward,
+    Backward,
+    Left,
+    Right,
+    Stop,
 }
 
 pub struct CarController {
@@ -31,12 +39,20 @@ impl CarController {
     pub fn new() -> Self {
         CarController {
             client: Client::default(),
-            auth: "000000".to_owned(),
+            auth: "119172".to_owned(),
         }
     }
 
     pub async fn send_instruction(&self, instr: CarInstruction) -> Result<(), CarControllerError> {
-        let response = self.client.request(Method::PUT, "hackathon-4-car.local:5000")
+        let instr = match instr {
+            CarInstruction::Forward => CarInstructionHttp { speed: 1., flip: false },
+            CarInstruction::Backward => CarInstructionHttp { speed: -1., flip: false },
+            CarInstruction::Left => CarInstructionHttp { speed: -1., flip: true },
+            CarInstruction::Right => CarInstructionHttp { speed: 1., flip: true },
+            CarInstruction::Stop => CarInstructionHttp { speed: 0., flip: false },
+        };
+
+        let response = self.client.request(Method::PUT, "http://hackathon-4-car.local:5000")
             .header("Authorization", &self.auth)
             .json(&instr)
             .send()
