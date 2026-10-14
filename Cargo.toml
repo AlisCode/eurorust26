@@ -1,3 +1,6 @@
 [workspace]
-members = ["overlord"]
+members = [
+    "car_control",
+    "overlord",
+]
 resolver = "3"
