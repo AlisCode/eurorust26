@@ -1,3 +1,7 @@
+Connect to the chat server: `ssh -p 2022 192.168.0.106`
+
+Host key fingerprint (Ed25519): `SHA256:/bkgq+8vG70cKSxZW4FFz0YQoY6GkB190wue+bzJ+8s`
+
 # Contact info
 
 ## Marc
