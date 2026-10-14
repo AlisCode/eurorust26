@@ -5,10 +5,10 @@ mod control;
 
 #[tokio::main]
 async fn main() {
-    info!("starting control loop");
     tracing_subscriber::fmt()
         .with_env_filter(tracing_subscriber::EnvFilter::from_default_env())
         .init();
+    info!("starting control loop");
 
     control::control().await;
 }
